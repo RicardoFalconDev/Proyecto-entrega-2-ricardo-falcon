@@ -1706,3 +1706,268 @@ a:hover {
     }
 
 }
+
+/* ////////SECCION SOBRE NOSOTROS//////// */
+
+
+#header-nosotros {
+    grid-area: cabeza;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url("resources/img/img-nosotros.jpeg");
+    height: 40vh;
+
+}
+
+#grid-area-nosotros {
+    display: grid;
+    /* estructura grid por areas */
+    grid-template-areas:
+        /* 3 columnas y 4 filas */
+        "menu menu "
+        /* fila 1 */
+        "cabeza cabeza"
+        /* fila 2 */
+        "productos productos"
+        /* fila 3 */
+        "newslatter newslatter"
+        " pie pie"
+        /* fila 4 */
+    ;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+
+    /* espacios  */
+    grid-column-gap: 5px;
+    
+}
+
+
+/* CONTACTO*/
+
+#header-contacto {
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url("resources/img/img-contacto.jpg");
+    height: 40vh;
+    }
+
+
+
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%);
+    /* Utiliza el valor mas pequeño*/
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.formulario fieldset {
+    border: none;
+    margin: 25px;
+
+}
+
+.formulario legend {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 2rem 2rem 2rem .5rem;
+    color: var(--primario);
+    text-align: center;
+}
+
+.contenedor-campos {
+    background-color: #E98580;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-radius: 20px;
+}
+
+.campos {margin-bottom: 1rem;
+    width: 95%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.campos label {
+    color: var(--oscuro);
+    font-size: 25px;
+    margin: 1.5rem 0.5rem;
+    display: block;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    font-size: 20px;
+}
+
+.contenedor-campos button {
+    margin-bottom: 0;
+    padding: 20px 40px;
+    font-size: 20px;
+}
+
+/* ///////// BLOG /////// */
+
+#main-blog p {
+    text-align: justify;
+}
+
+
+#header-blog {
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url("resources/img/img-blog.jpg");
+    height: 40vh;
+    }
+
+    .ingredients {
+        line-height: 1.5rem;
+        margin-top: -1rem;
+        list-style-type: none;
+        text-align: left;
+    }
+    .ingredients li:before {
+            content: '✓ ';
+    }
+    .directions {
+        line-height: 1.5rem;
+        margin-top: -1rem;
+        text-align: left;
+    }
+    #container img {
+      /* margin-left: 10vw;*/
+        width: 300px;
+        height: 300px;
+        border: 40px #C0EDA6 solid;
+        border-radius: 50%;
+    }
+    .description p {
+        font-style: italic;
+        text-align: left;
+    }
+
+
+        .receta h4 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            color: var(--oscuro);
+            text-align: left;
+        }
+
+        .receta h3{
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: var(--oscuro);
+        }
+
+        #main-blog {
+            padding: 500px;
+        }
+
+        #container {
+            margin: 60px;
+        }
+
+        #container h2 {
+            text-align: center;
+            font-size: 40px;
+            color: var(--primario);
+            background-color: var(--claro);
+            border-radius: 10px;
+
+        }
+
+        .directions-container {
+            padding: 15px;
+        }
+      
+        .directions-container ol li {
+            text-align: left;
+        }
+
+        @media (max-width: 480px) {
+
+            .receta {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            #container img {
+                margin-bottom: 18px;
+              }
+
+            #container {
+                margin: 15px;
+
+            }
+
+            .formulario {
+                background-color: var(--gris);
+                width: min(60rem, 100%);
+                margin: 0 auto;
+                border-radius: 1rem;
+                padding: 0.2rem;
+            }
+
+            .input-text {
+                width: 100%;
+                border: none;
+                padding: 0.7rem;
+                border-radius: 0.5rem;
+                font-size: 20px;
+            }
+
+            .campos label {
+                margin: 1rem 0.5rem;
+            }
+
+            .campos {
+                margin-bottom: 0.5rem;
+              
+            }
+        } 
